@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Predictive Labs and nijinn at NEXTPredict 2026</title>
+<meta name="description" content="A tailored partnership proposal for Predictive Labs, nijinn and NEXTPredict 2026.">
+<style>
+:root{
+  --bg:#07090b;
+  --bg-soft:#0b0f12;
+  --panel:#10161a;
+  --panel-2:#131b20;
+  --line:rgba(255,255,255,.11);
+  --line-strong:rgba(255,255,255,.2);
+  --text:#f6f7f2;
+  --muted:#aeb7b5;
+  --yellow:#ffcf33;
+  --aqua:#77f2d2;
+  --blue:#70a7ff;
+  --violet:#9d8cff;
+  --green:#91f7a7;
+  --max:1240px;
+  --radius:26px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;background:
+  radial-gradient(circle at 75% 10%,rgba(112,167,255,.11),transparent 26%),
+  radial-gradient(circle at 20% 22%,rgba(119,242,210,.07),transparent 30%),
+  var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--yellow);color:#080808}
+.wrap{width:min(calc(100% - 42px),var(--max));margin:auto}
+.site-grid{position:fixed;inset:0;pointer-events:none;z-index:-2;opacity:.18;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(to bottom,#000 0%,transparent 82%)}
+.noise{position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.75'/%3E%3C/svg%3E")}
+nav{height:80px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{font-size:15px;font-weight:900;letter-spacing:.075em}.brand .next{color:var(--yellow)}.brand .partner{color:var(--aqua)}
+.nav-meta{font-size:11px;text-transform:uppercase;letter-spacing:.14em;text-align:right;color:var(--muted);line-height:1.5}
+.hero{min-height:760px;padding:74px 0 64px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.hero-copy h1{font-size:clamp(52px,7vw,98px);line-height:.92;letter-spacing:-.066em;margin:0;max-width:760px}
+.hero-copy h1 .accent{background:linear-gradient(90deg,var(--aqua),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-lead{font-size:clamp(19px,2vw,25px);line-height:1.5;color:#d9dfdc;max-width:720px;margin:28px 0 0}
+.hero-note{font-size:14px;line-height:1.6;color:var(--muted);max-width:700px;margin:22px 0 0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 19px;border-radius:999px;border:1px solid var(--line-strong);font-size:14px;font-weight:800;background:rgba(255,255,255,.035);transition:.22s ease}
+.btn.primary{background:var(--yellow);border-color:var(--yellow);color:#080808}.btn:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.38)}
+.terminal-shell{position:relative;min-height:570px;display:grid;place-items:center}
+.terminal-glow{position:absolute;width:88%;height:86%;border-radius:50%;background:radial-gradient(circle,rgba(112,167,255,.16),rgba(119,242,210,.05) 44%,transparent 70%);filter:blur(18px)}
+.terminal{width:min(100%,590px);position:relative;border:1px solid rgba(255,255,255,.17);background:linear-gradient(160deg,rgba(18,25,30,.97),rgba(7,10,12,.98));border-radius:26px;box-shadow:0 35px 80px rgba(0,0,0,.42);overflow:hidden;transform:perspective(1100px) rotateY(-5deg) rotateX(2deg)}
+.terminal-top{height:48px;display:flex;align-items:center;justify-content:space-between;padding:0 17px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.025)}
+.window-dots{display:flex;gap:7px}.window-dots i{width:8px;height:8px;border-radius:50%;background:#465057}.window-dots i:nth-child(2){background:#617078}.window-dots i:nth-child(3){background:var(--aqua)}
+.terminal-name{font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#d7dedb}
+.live{display:flex;align-items:center;gap:7px;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}.live:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(145,247,167,.08);animation:blink 1.8s ease-in-out infinite}
+.terminal-body{display:grid;grid-template-columns:112px 1fr;min-height:474px}
+.terminal-nav{padding:16px 10px;border-right:1px solid var(--line);background:rgba(255,255,255,.018)}
+.tnav{padding:11px 10px;margin-bottom:6px;border-radius:11px;font-size:10px;font-weight:800;color:#78827f;letter-spacing:.04em}.tnav.active{background:rgba(119,242,210,.09);color:var(--aqua);border:1px solid rgba(119,242,210,.16)}
+.terminal-main{padding:18px 18px 16px;display:grid;gap:13px}
+.market-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.market-head h3{font-size:22px;letter-spacing:-.04em;margin:0}.market-head p{font-size:10px;color:var(--muted);margin:5px 0 0}.match-score{text-align:right}.match-score strong{display:block;color:var(--aqua);font-size:23px}.match-score span{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.price-card{border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(255,255,255,.02)}.price-card .venue{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.11em}.price-card strong{display:block;font-size:24px;margin-top:8px;letter-spacing:-.04em}.price-card small{display:block;font-size:9px;color:var(--aqua);margin-top:4px}
+.chart{position:relative;height:150px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(180deg,rgba(112,167,255,.05),rgba(255,255,255,.01));background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:34px 34px}
+.chart svg{position:absolute;inset:0;width:100%;height:100%}.chart path{fill:none;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:640;stroke-dashoffset:640;animation:draw 4s ease forwards}.chart .c1{stroke:var(--aqua)}.chart .c2{stroke:var(--blue);animation-delay:.45s}.chart .c3{stroke:var(--violet);animation-delay:.9s}
+.rule-strip{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;border:1px solid rgba(255,207,51,.2);background:rgba(255,207,51,.04);border-radius:15px;padding:13px}.rule-strip strong{font-size:11px}.rule-strip span{display:block;font-size:9px;color:var(--muted);margin-top:4px}.rule-status{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--yellow);border:1px solid rgba(255,207,51,.28);border-radius:999px;padding:7px 9px}
+.ticker{position:absolute;left:-20px;right:-24px;bottom:-26px;height:49px;border:1px solid var(--line);border-radius:14px;background:#0d1215;overflow:hidden;display:flex;align-items:center;box-shadow:0 16px 40px rgba(0,0,0,.32)}
+.ticker-track{display:flex;gap:34px;white-space:nowrap;animation:ticker 17s linear infinite;padding-left:20px}.tick{font-size:10px;color:var(--muted)}.tick b{color:var(--text);margin-right:8px}.tick em{font-style:normal;color:var(--aqua)}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes ticker{to{transform:translateX(-50%)}}@keyframes blink{50%{opacity:.45}}
+.section{padding:92px 0;border-top:1px solid var(--line)}
+.section-head{display:grid;grid-template-columns:.62fr 1.38fr;gap:72px;align-items:start;margin-bottom:44px}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.17em;font-weight:900;color:var(--aqua)}
+.section h2{font-size:clamp(40px,5vw,68px);line-height:.99;letter-spacing:-.055em;margin:0}
+.section-intro{font-size:18px;line-height:1.6;color:#cbd2cf;max-width:830px;margin:20px 0 0}
+.fit-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+.story-panel{border:1px solid rgba(119,242,210,.25);border-radius:var(--radius);padding:38px;background:linear-gradient(150deg,rgba(119,242,210,.075),rgba(112,167,255,.025));min-height:390px;display:flex;flex-direction:column;justify-content:space-between}
+.story-panel h3{font-size:clamp(31px,3.9vw,52px);line-height:1.02;letter-spacing:-.052em;margin:0}.story-panel p{font-size:17px;line-height:1.63;color:#d2d8d5;max-width:760px;margin:24px 0 0}
+.story-foot{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}.story-foot div{font-size:12px;line-height:1.45;color:var(--muted)}.story-foot b{display:block;color:var(--aqua);font-size:11px;text-transform:uppercase;letter-spacing:.11em;margin-bottom:7px}
+.audience{display:grid;gap:10px}.audience-card{border:1px solid var(--line);border-radius:18px;padding:22px;background:rgba(255,255,255,.025);transition:.2s}.audience-card:hover{transform:translateX(6px);border-color:rgba(112,167,255,.35)}.audience-card small{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);font-weight:900}.audience-card h4{font-size:19px;margin:9px 0 6px}.audience-card p{font-size:13px;line-height:1.5;color:var(--muted);margin:0}
+.product-rail{display:grid;grid-template-columns:240px 1fr;gap:24px}
+.product-tabs{display:grid;gap:9px;align-content:start}.product-tab{width:100%;text-align:left;padding:18px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.02);color:var(--muted);cursor:pointer;transition:.2s}.product-tab strong{display:block;color:inherit;font-size:15px}.product-tab span{display:block;font-size:11px;margin-top:6px}.product-tab.active,.product-tab:hover{background:linear-gradient(90deg,var(--aqua),#a7ffe8);color:#07100d;border-color:transparent;transform:translateX(5px)}
+.product-panel{border:1px solid rgba(112,167,255,.24);border-radius:var(--radius);padding:36px;background:linear-gradient(150deg,rgba(112,167,255,.065),rgba(119,242,210,.025));min-height:420px}.product-view{display:none}.product-view.active{display:block;animation:fade .3s ease}.product-panel h3{font-size:clamp(31px,4vw,50px);line-height:1.03;letter-spacing:-.05em;margin:0}.product-panel p{font-size:17px;line-height:1.62;color:#cbd2cf;max-width:800px}.product-points{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.product-point{padding:18px 0;border-top:1px solid var(--line);font-size:13px;line-height:1.5;color:#e2e7e4}.product-point b{color:var(--aqua)}
+.room-band{display:grid;grid-template-columns:1fr 1fr;gap:18px}.room-panel{border-radius:var(--radius);border:1px solid var(--line);background:var(--panel);padding:34px}.room-panel h3{font-size:30px;letter-spacing:-.045em;margin:0}.room-panel p{font-size:15px;line-height:1.6;color:var(--muted);margin:16px 0 0}.logo-cloud{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}.logo-pill{border:1px solid var(--line);border-radius:999px;padding:10px 14px;font-size:12px;font-weight:800;background:rgba(255,255,255,.025)}
+.room-panel.alt{background:linear-gradient(145deg,rgba(255,207,51,.09),rgba(255,255,255,.02));border-color:rgba(255,207,51,.24)}.room-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin-top:25px}.room-stat{border-top:1px solid var(--line);padding:16px 0}.room-stat strong{display:block;color:var(--yellow);font-size:28px;letter-spacing:-.045em}.room-stat span{font-size:11px;line-height:1.45;color:var(--muted)}
+.options-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.option{position:relative;border:1px solid var(--line);border-radius:24px;background:var(--panel);padding:29px;display:flex;flex-direction:column;min-height:500px;transition:.22s}.option:hover{transform:translateY(-7px);border-color:rgba(255,255,255,.25)}.option.featured{background:linear-gradient(155deg,rgba(119,242,210,.1),rgba(112,167,255,.035));border-color:rgba(119,242,210,.34)}
+.option-label{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--blue);font-weight:900}.option.featured .option-label{color:var(--aqua)}.option h3{font-size:28px;line-height:1.06;letter-spacing:-.045em;margin:16px 0 10px}.option .price{font-size:32px;font-weight:900;color:var(--yellow);letter-spacing:-.045em}.option .price small{display:block;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-top:5px}.option p{font-size:14px;line-height:1.56;color:var(--muted)}.deliverables{display:grid;gap:0;margin:16px 0 25px}.deliverable{display:grid;grid-template-columns:17px 1fr;gap:10px;padding:12px 0;border-top:1px solid var(--line);font-size:12px;line-height:1.45;color:#e0e5e2}.deliverable:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--aqua);margin-top:4px}.option .fit{margin-top:auto;padding:16px;border-radius:15px;background:rgba(255,255,255,.03);font-size:12px;line-height:1.5;color:#c9d0cd}.option .fit b{color:var(--aqua)}
+.singapore-shell{display:grid;grid-template-columns:1fr .94fr;gap:22px;align-items:stretch}
+.sg-copy{border:1px solid rgba(255,207,51,.25);border-radius:var(--radius);background:linear-gradient(145deg,rgba(255,207,51,.09),rgba(255,255,255,.02));padding:38px}.sg-copy h3{font-size:clamp(33px,4vw,54px);line-height:1.02;letter-spacing:-.055em;margin:0}.sg-copy p{font-size:17px;line-height:1.62;color:#d5d9d5;margin:24px 0 0}.sg-prompt{margin-top:28px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;line-height:1.58;color:var(--muted)}.sg-prompt b{color:var(--yellow)}
+.route-map{position:relative;min-height:420px;border:1px solid var(--line);border-radius:var(--radius);background:radial-gradient(circle at 22% 68%,rgba(255,207,51,.1),transparent 28%),radial-gradient(circle at 78% 28%,rgba(119,242,210,.11),transparent 28%),var(--panel);overflow:hidden;padding:28px}.route-map:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:34px 34px}.route-svg{position:absolute;inset:0;width:100%;height:100%}.route-svg path{fill:none;stroke:url(#routeGrad);stroke-width:2.4;stroke-dasharray:8 9;animation:route 16s linear infinite}.city{position:absolute;z-index:2}.city strong{display:block;font-size:21px}.city span{display:block;color:var(--muted);font-size:11px;margin-top:5px}.city:before{content:"";position:absolute;width:13px;height:13px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 8px rgba(255,207,51,.08);left:0;top:-23px}.city.sg{left:12%;bottom:17%}.city.ny{right:12%;top:17%;text-align:right}.city.ny:before{left:auto;right:0;background:var(--aqua);box-shadow:0 0 0 8px rgba(119,242,210,.08)}.route-card{position:absolute;left:50%;top:51%;transform:translate(-50%,-50%);z-index:2;width:210px;padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(8,12,14,.9);backdrop-filter:blur(8px);text-align:center}.route-card small{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);font-weight:900}.route-card strong{display:block;font-size:20px;margin-top:8px}.route-card span{display:block;font-size:11px;color:var(--muted);line-height:1.5;margin-top:7px}
+@keyframes route{to{stroke-dashoffset:-180}}@keyframes fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.cta{padding:88px 0 56px;border-top:1px solid var(--line)}.cta-card{border:1px solid rgba(255,207,51,.28);border-radius:30px;background:linear-gradient(135deg,rgba(255,207,51,.12),rgba(119,242,210,.045));padding:42px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.cta-card h2{font-size:clamp(38px,5vw,66px);line-height:.99;letter-spacing:-.058em;margin:0}.cta-card p{font-size:17px;line-height:1.58;color:#d2d7d4;max-width:760px}.cta-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.terms{font-size:11px;line-height:1.55;color:#737d7a;margin-top:22px}
+.reveal{opacity:0;transform:translateY(18px);transition:.65s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:1040px){.hero,.fit-grid,.singapore-shell,.room-band{grid-template-columns:1fr}.terminal-shell{min-height:600px}.terminal{transform:none}.section-head{grid-template-columns:1fr;gap:16px}.product-rail{grid-template-columns:1fr}.product-tabs{grid-template-columns:repeat(3,1fr)}.product-tab.active,.product-tab:hover{transform:none}.options-grid{grid-template-columns:1fr}.option{min-height:auto}.cta-card{grid-template-columns:1fr}.cta-actions{justify-content:flex-start}}
+@media(max-width:680px){.wrap{width:min(calc(100% - 24px),var(--max))}nav{height:70px}.nav-meta{font-size:8px}.hero{padding:46px 0 52px;min-height:auto;gap:36px}.hero-copy h1{font-size:47px}.terminal-shell{min-height:470px}.terminal-body{grid-template-columns:78px 1fr}.terminal-nav{padding:12px 7px}.tnav{font-size:8px;padding:9px 7px}.terminal-main{padding:14px}.market-head h3{font-size:18px}.price-card{padding:9px}.price-card strong{font-size:19px}.chart{height:125px}.ticker{left:0;right:0;bottom:-24px}.section{padding:68px 0}.section h2{font-size:40px}.story-panel,.product-panel,.room-panel,.option,.sg-copy,.route-map,.cta-card{padding:24px}.story-foot,.product-points{grid-template-columns:1fr}.product-tabs{grid-template-columns:1fr}.price-grid{gap:6px}.route-map{min-height:360px}.route-card{width:175px}.cta-card h2{font-size:40px}}
+@media print{.reveal{opacity:1!important;transform:none!important}.ticker-track,.chart path,.route-svg path,.live:before{animation:none!important}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="site-grid"></div><div class="noise"></div>
+<div class="wrap">
+  <nav>
+    <div class="brand"><span class="next">NEXT</span>PREDICT <span class="partner">× PREDICTIVE LABS</span></div>
+    <div class="nav-meta">New York · 22-23 October 2026<br>Convene, Hudson Yards</div>
+  </nav>
+</div>
+
+<header class="hero wrap">
+  <div class="hero-copy reveal">
+    <h1>A professional layer for a <span class="accent">fragmented prediction market.</span></h1>
+    <p class="hero-lead">A tailored NEXTPredict partnership proposal for Alexis, Johann, Predictive Labs and nijinn.</p>
+    <p class="hero-note">As nijinn moves towards its October launch, NEXTPredict offers a focused platform to introduce the product to exchanges, trading firms, investors, operators, data specialists and market infrastructure leaders.</p>
+    <div class="actions">
+      <a class="btn primary" href="#opportunities">Explore partnership options</a>
+      <a class="btn" href="https://nextpredict-2026-sales-deck-1069296223957.us-west1.run.app/" target="_blank" rel="noopener">View full NEXTPredict brochure</a>
+    </div>
+  </div>
+
+  <div class="terminal-shell reveal" aria-label="Illustrative nijinn cross-venue intelligence terminal">
+    <div class="terminal-glow"></div>
+    <div class="terminal">
+      <div class="terminal-top">
+        <div class="window-dots"><i></i><i></i><i></i></div>
+        <div class="terminal-name">nijinn / market intelligence</div>
+        <div class="live">Live</div>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-nav">
+          <div class="tnav active">Overview</div>
+          <div class="tnav">Arbitrage</div>
+          <div class="tnav">Directional</div>
+          <div class="tnav">Market making</div>
+          <div class="tnav">Audit</div>
+          <div class="tnav">Hedging</div>
+        </div>
+        <div class="terminal-main">
+          <div class="market-head">
+            <div><h3>Will event X occur?</h3><p>Illustrative cross-venue comparison</p></div>
+            <div class="match-score"><strong>94%</strong><span>contract match</span></div>
+          </div>
+          <div class="price-grid">
+            <div class="price-card"><span class="venue">Venue A</span><strong>61¢</strong><small>+2.1%</small></div>
+            <div class="price-card"><span class="venue">Venue B</span><strong>58¢</strong><small>+0.8%</small></div>
+            <div class="price-card"><span class="venue">Venue C</span><strong>64¢</strong><small>+3.4%</small></div>
+          </div>
+          <div class="chart">
+            <svg viewBox="0 0 520 150" preserveAspectRatio="none" aria-hidden="true">
+              <path class="c1" d="M0 120 C44 105,67 113,104 84 S169 46,215 68 S293 112,334 75 S417 31,520 43"/>
+              <path class="c2" d="M0 133 C54 120,81 93,121 98 S197 124,240 83 S325 50,371 66 S455 92,520 54"/>
+              <path class="c3" d="M0 104 C61 96,90 122,137 92 S211 42,253 58 S333 98,382 69 S461 47,520 72"/>
+            </svg>
+          </div>
+          <div class="rule-strip"><div><strong>Resolution and source check</strong><span>Contract language aligned, one material source difference flagged.</span></div><div class="rule-status">Review</div></div>
+        </div>
+      </div>
+      <div class="ticker"><div class="ticker-track">
+        <span class="tick"><b>ARB SPREAD</b><em>+4.7%</em></span><span class="tick"><b>LIQUIDITY</b><em>HIGH</em></span><span class="tick"><b>RULE MATCH</b><em>94%</em></span><span class="tick"><b>HEDGE SIGNAL</b><em>ACTIVE</em></span>
+        <span class="tick"><b>ARB SPREAD</b><em>+4.7%</em></span><span class="tick"><b>LIQUIDITY</b><em>HIGH</em></span><span class="tick"><b>RULE MATCH</b><em>94%</em></span><span class="tick"><b>HEDGE SIGNAL</b><em>ACTIVE</em></span>
+      </div></div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="fit">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Why the fit is strong</div>
+      <div><h2>nijinn gives the room something tangible to explore.</h2><p class="section-intro">Prediction markets are spreading across venues, contract rules, resolution systems and professional use cases. That creates a clear need for better comparison, analysis and workflow tools. A live product story will land well with a NEXTPredict audience already thinking about market structure, liquidity, risk and distribution.</p></div>
+    </div>
+    <div class="fit-grid">
+      <div class="story-panel reveal">
+        <div>
+          <h3>The opportunity is to show how professionals work across the category.</h3>
+          <p>nijinn can move the conversation beyond individual markets and individual exchanges. The stronger story is how a professional user identifies opportunity, understands contract differences, manages risk and builds a repeatable workflow across multiple venues.</p>
+        </div>
+        <div class="story-foot">
+          <div><b>Product</b>Five professional workflows in one environment</div>
+          <div><b>Timing</b>An October launch aligned with NEXTPredict</div>
+          <div><b>Audience</b>People who can use, fund, integrate or distribute it</div>
+        </div>
+      </div>
+      <div class="audience reveal">
+        <article class="audience-card"><small>Trading and liquidity</small><h4>Market makers and professional traders</h4><p>Users who understand the cost of fragmented prices, rules and execution.</p></article>
+        <article class="audience-card"><small>Infrastructure</small><h4>Exchanges, data and technology companies</h4><p>Potential integration, distribution and market-data relationships.</p></article>
+        <article class="audience-card"><small>Capital and growth</small><h4>Investors, operators and strategic partners</h4><p>People assessing where durable businesses will form around the venues.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="product">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">The story nijinn can own</div>
+      <div><h2>One market category. Several different professional problems.</h2><p class="section-intro">The strongest presentation will show the product through a small number of practical questions. Each one can become a live demonstration, a case study or a focused conversation with the audience.</p></div>
+    </div>
+    <div class="product-rail reveal">
+      <div class="product-tabs" role="tablist" aria-label="nijinn product themes">
+        <button class="product-tab active" data-product="compare"><strong>Compare</strong><span>Prices, rules and venues</span></button>
+        <button class="product-tab" data-product="trade"><strong>Act</strong><span>Trading and market making</span></button>
+        <button class="product-tab" data-product="manage"><strong>Manage</strong><span>Performance, risk and hedging</span></button>
+      </div>
+      <div class="product-panel">
+        <div class="product-view active" id="compare">
+          <h3>When do two contracts represent the same event?</h3>
+          <p>Price comparison is useful only when the underlying contracts are genuinely comparable. nijinn can show how resolution language, source agencies, fees, liquidity and settlement mechanics change the real opportunity.</p>
+          <div class="product-points"><div class="product-point"><b>Live proof:</b> compare one event across several venues</div><div class="product-point"><b>Audience value:</b> understand basis and resolution risk</div><div class="product-point"><b>Commercial value:</b> establish nijinn as a trusted intelligence layer</div></div>
+        </div>
+        <div class="product-view" id="trade">
+          <h3>How does a professional turn fragmented markets into a workflow?</h3>
+          <p>Arbitrage, directional trading and market making each require different information. nijinn can demonstrate how a user moves from market discovery to a decision without opening several disconnected tools.</p>
+          <div class="product-points"><div class="product-point"><b>Live proof:</b> surface a cross-venue opportunity</div><div class="product-point"><b>Audience value:</b> see the workflow rather than a static odds page</div><div class="product-point"><b>Commercial value:</b> make the first paid use case easy to understand</div></div>
+        </div>
+        <div class="product-view" id="manage">
+          <h3>What happens after the trade?</h3>
+          <p>Performance auditing and real-world hedging can widen nijinn's relevance beyond active traders. This is where the product can connect prediction-market signals to portfolio decisions, risk management and institutional use cases.</p>
+          <div class="product-points"><div class="product-point"><b>Live proof:</b> show attribution, exposure or a hedge scenario</div><div class="product-point"><b>Audience value:</b> connect markets to real decisions</div><div class="product-point"><b>Commercial value:</b> open conversations with institutions and enterprises</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="room">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Why NEXTPredict</div>
+      <div><h2>A concentrated room for market structure, product and capital.</h2><p class="section-intro">NEXTPredict is being built around the companies and people deciding how prediction markets scale. For nijinn, that means a launch audience with direct relevance to product adoption, integration, investment and credibility.</p></div>
+    </div>
+    <div class="room-band">
+      <div class="room-panel reveal">
+        <h3>Organisations already represented</h3>
+        <p>The developing speaker and attendee mix spans exchanges, operators, financial institutions, investors, regulators and national media.</p>
+        <div class="logo-cloud">
+          <span class="logo-pill">DraftKings</span><span class="logo-pill">Robinhood</span><span class="logo-pill">Kalshi</span><span class="logo-pill">CFTC</span><span class="logo-pill">Bank of America</span><span class="logo-pill">Dragonfly</span><span class="logo-pill">GSR</span><span class="logo-pill">Bloomberg</span><span class="logo-pill">CNBC</span><span class="logo-pill">Blackstone</span>
+        </div>
+      </div>
+      <div class="room-panel alt reveal">
+        <h3>The event environment</h3>
+        <p>Two days of senior content and networking in New York, scheduled two weeks before the US midterms when prediction markets will be firmly in the national conversation.</p>
+        <div class="room-stats"><div class="room-stat"><strong>22-23 Oct</strong><span>Two days at Convene, Hudson Yards</span></div><div class="room-stat"><strong>2,500</strong><span>Senior delegates targeted across the category</span></div><div class="room-stat"><strong>3 stages</strong><span>Leadership, markets and capital, builders and workshops</span></div><div class="room-stat"><strong>NYC</strong><span>Close to finance, media, operators and institutional capital</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="opportunities">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Partnership options</div>
+      <div><h2>Three ways to give nijinn a meaningful October presence.</h2><p class="section-intro">Each route serves a different objective. The live presentation is the most direct way to explain the product. The branded session builds category authority. The pre-registration partnership gives nijinn a strong networking and visibility position.</p></div>
+    </div>
+    <div class="options-grid">
+      <article class="option reveal">
+        <div class="option-label">Specialist visibility</div>
+        <h3>Stage 3 branded session</h3>
+        <div class="price">€13,500<small>Guide price</small></div>
+        <p>nijinn powers a specialist Builders Hub discussion on cross-venue intelligence, professional workflows, market structure or resolution risk.</p>
+        <div class="deliverables"><div class="deliverable">25-30 minute panel with powered-by title integration</div><div class="deliverable">One nominated Predictive Labs speaker</div><div class="deliverable">Agenda, screen, website and partner visibility</div><div class="deliverable">Session developed with the NEXTPredict content team</div></div>
+        <div class="fit"><b>Good fit for:</b> establishing a clear category position through a curated discussion.</div>
+      </article>
+
+      <article class="option featured reveal">
+        <div class="option-label">Suggested product moment</div>
+        <h3>nijinn live presentation</h3>
+        <div class="price">€30,000<small>Guide price</small></div>
+        <p>A focused 20-minute presentation in the Builders Hub, designed around a live product demonstration and the professional problem nijinn is built to solve.</p>
+        <div class="deliverables"><div class="deliverable">Solo presentation with title and topic input from Predictive Labs</div><div class="deliverable">A highly relevant technical and product audience</div><div class="deliverable">AV and slide support for a live terminal demonstration</div><div class="deliverable">Branded agenda, screen and website presence</div><div class="deliverable">One full-event pass and one speaker pass</div></div>
+        <div class="fit"><b>Suggested theme:</b> When the same event trades differently everywhere.</div>
+      </article>
+
+      <article class="option reveal">
+        <div class="option-label">Networking and brand</div>
+        <h3>Pre-registration drinks partner</h3>
+        <div class="price">€34,000<small>Non-exclusive</small></div>
+        <p>A visible role in the first networking moment before the summit begins, giving nijinn repeated brand exposure and an easy environment for conversations.</p>
+        <div class="deliverables"><div class="deliverable">Shared branding across the pre-registration environment</div><div class="deliverable">Welcome banner, photo wall and branded service items</div><div class="deliverable">30-second video advertisement on event screens</div><div class="deliverable">Official photography, partner listing and social welcome</div><div class="deliverable">One full-event pass</div></div>
+        <div class="fit"><b>Good fit for:</b> relationship-building and brand visibility around the launch.</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="singapore">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Singapore collaboration</div>
+      <div><h2>There may also be a useful partnership around TOKEN2049.</h2><p class="section-intro">We would be pleased to explore a role around the nijinn prediction-markets cocktail event in Singapore. Stuart can be there in person, and there may be a strong fit around audience development, brand presence, introductions and content.</p></div>
+    </div>
+    <div class="singapore-shell">
+      <div class="sg-copy reveal">
+        <h3>Tell us how you see the partnership working.</h3>
+        <p>The next step is for Predictive Labs to share a little more detail on the event, the audience you are building and the role you would like NEXTPredict to play. From there, we can shape something that feels valuable to both sides and supports the wider relationship into October.</p>
+        <div class="sg-prompt"><b>Helpful details would include:</b> timing and venue, expected guest profile, proposed partner role, branding and promotion, guest access, content opportunities, and any introductions or community involvement you would like us to support.</div>
+      </div>
+      <div class="route-map reveal" aria-label="Illustrative connection between Singapore and New York">
+        <svg class="route-svg" viewBox="0 0 600 420" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="routeGrad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ffcf33"/><stop offset="1" stop-color="#77f2d2"/></linearGradient></defs>
+          <path d="M90 325 C160 220,210 280,300 205 S435 110,515 90"/>
+        </svg>
+        <div class="city sg"><strong>Singapore</strong><span>TOKEN2049 · relationship and network</span></div>
+        <div class="city ny"><strong>New York</strong><span>NEXTPredict · product and category</span></div>
+        <div class="route-card"><small>Potential partnership arc</small><strong>One relationship, two useful moments</strong><span>Build the connection in Singapore, then give nijinn a focused October platform in New York.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <div><h2>Alexis and Johann, let’s shape the right October platform for nijinn.</h2><p>We can refine the New York option around your launch priorities, and separately explore the Singapore partnership once we understand the event and the role you have in mind.</p></div>
+      <div class="cta-actions"><a class="btn primary" href="mailto:stuart@next.io?subject=Predictive%20Labs%20and%20nijinn%20x%20NEXTPredict">Continue the conversation</a><a class="btn" href="https://nextpredict-2026-sales-deck-1069296223957.us-west1.run.app/" target="_blank" rel="noopener">View full brochure</a></div>
+    </div>
+    <div class="terms">Partnership pricing and inventory are subject to availability and contract. Session format, speakers, title and placement are agreed in collaboration with the NEXTPredict content team.</div>
+  </div>
+</section>
+
+<script>
+const productTabs=[...document.querySelectorAll('.product-tab')];
+const productViews=[...document.querySelectorAll('.product-view')];
+productTabs.forEach(tab=>tab.addEventListener('click',()=>{
+  productTabs.forEach(t=>t.classList.remove('active'));
+  productViews.forEach(v=>v.classList.remove('active'));
+  tab.classList.add('active');
+  document.getElementById(tab.dataset.product).classList.add('active');
+}));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
